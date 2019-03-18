@@ -1280,3 +1280,486 @@ Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8b
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-15 00:51:22 -0500
+
+
+Started GET "/" for ::1 at 2019-03-18 11:39:23 -0500
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=DBA4FGMPBB3U01LUE3WNKRYT0ECAR053ELDQKYT1DL30D5RA&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 27ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2019-03-18 11:40:28 -0500
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=DBA4FGMPBB3U01LUE3WNKRYT0ECAR053ELDQKYT1DL30D5RA&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=RUN1QUBNGSV5F25OYLYCDRUQ142F1WABG0TSCTULYENSSFJX" for ::1 at 2019-03-18 11:40:31 -0500
+
+ActionController::RoutingError (No route matches [GET] "/auth"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/johnwerenski/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/johnwerenski/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/johnwerenski/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (16.7ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (144.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (95.7ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (202.4ms)
+
+
+Started GET "/" for ::1 at 2019-03-18 12:10:59 -0500
+
+ActionController::RoutingError (undefined method `render' for SearchesController:Class
+Did you mean?  _renderers):
+  app/controllers/searches_controller.rb:39:in `<class:SearchesController>'
+  app/controllers/searches_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.1ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (123.7ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (75.6ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (173.4ms)
+
+
+Started GET "/search" for ::1 at 2019-03-18 12:11:03 -0500
+
+ActionController::RoutingError (undefined method `render' for SearchesController:Class
+Did you mean?  _renderers):
+  app/controllers/searches_controller.rb:39:in `<class:SearchesController>'
+  app/controllers/searches_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.2ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (115.7ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (71.1ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (161.5ms)
+
+
+Started GET "/search" for ::1 at 2019-03-18 12:13:05 -0500
+
+ActionController::RoutingError (undefined method `render' for SearchesController:Class
+Did you mean?  _renderers):
+  app/controllers/searches_controller.rb:39:in `<class:SearchesController>'
+  app/controllers/searches_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (108.7ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (67.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (151.2ms)
+
+
+Started GET "/search" for ::1 at 2019-03-18 12:13:33 -0500
+
+ActionController::RoutingError (undefined method `render' for SearchesController:Class
+Did you mean?  _renderers):
+  app/controllers/searches_controller.rb:39:in `<class:SearchesController>'
+  app/controllers/searches_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (112.9ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (78.0ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (172.0ms)
+
+
+Started GET "/search" for ::1 at 2019-03-18 12:14:00 -0500
+
+ActionController::RoutingError (undefined method `render' for SearchesController:Class
+Did you mean?  _renderers):
+  app/controllers/searches_controller.rb:39:in `<class:SearchesController>'
+  app/controllers/searches_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (15.7ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.4ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (147.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (88.6ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (185.3ms)
+
+
+Started GET "/search" for ::1 at 2019-03-18 12:14:50 -0500
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=DBA4FGMPBB3U01LUE3WNKRYT0ECAR053ELDQKYT1DL30D5RA&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=IR5CGP4QG2YVF5MN0YZNRI0AK4FD2NIRLKF2WTQJE0IUED5W" for ::1 at 2019-03-18 12:14:53 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"IR5CGP4QG2YVF5MN0YZNRI0AK4FD2NIRLKF2WTQJE0IUED5W"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 476ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-18 12:15:46 -0500
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=DBA4FGMPBB3U01LUE3WNKRYT0ECAR053ELDQKYT1DL30D5RA&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=RX1SXWJ45GVETSQ3TRGUFSQSV0SEHJZPOXOIJ2UFPZLZYW2C" for ::1 at 2019-03-18 12:15:49 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"RX1SXWJ45GVETSQ3TRGUFSQSV0SEHJZPOXOIJ2UFPZLZYW2C"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 329ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-18 12:15:49 -0500
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=DBA4FGMPBB3U01LUE3WNKRYT0ECAR053ELDQKYT1DL30D5RA&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=OL4PPKD4AQXIX3Q5JJYGBMYGULZMFU1KYNT52O22OZYXK1ET" for ::1 at 2019-03-18 12:15:58 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"OL4PPKD4AQXIX3Q5JJYGBMYGULZMFU1KYNT52O22OZYXK1ET"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 229ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-18 12:15:58 -0500
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=DBA4FGMPBB3U01LUE3WNKRYT0ECAR053ELDQKYT1DL30D5RA&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-18 12:16:03 -0500
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=DBA4FGMPBB3U01LUE3WNKRYT0ECAR053ELDQKYT1DL30D5RA&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=JKBZQRGLVN0CFYWGDHUMQWJID51UJEGMT23WBXZPB3DOHLTO" for ::1 at 2019-03-18 12:16:07 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"JKBZQRGLVN0CFYWGDHUMQWJID51UJEGMT23WBXZPB3DOHLTO"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 335ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-18 12:16:08 -0500
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=DBA4FGMPBB3U01LUE3WNKRYT0ECAR053ELDQKYT1DL30D5RA&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-18 12:17:28 -0500
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=DBA4FGMPBB3U01LUE3WNKRYT0ECAR053ELDQKYT1DL30D5RA&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 11ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=OC24OXDZC5302R2232ZL5LTUX5RRXZJCRYWIQFIL5BLMYK1O" for ::1 at 2019-03-18 12:17:31 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"OC24OXDZC5302R2232ZL5LTUX5RRXZJCRYWIQFIL5BLMYK1O"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 635ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-18 12:17:32 -0500
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=DBA4FGMPBB3U01LUE3WNKRYT0ECAR053ELDQKYT1DL30D5RA&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-18 12:23:31 -0500
+Processing by SearchesController#search as HTML
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+RuntimeError (#<ActionDispatch::Request::Session:0x007fa73f999380 @by=#<ActionDispatch::Session::CookieStore:0x007fa73f979378 @app=#<ActionDispatch::Flash:0x007fa73f9793a0 @app=#<ActionDispatch::ParamsParser:0x007fa73f979468 @app=#<Rack::Head:0x007fa73f979490 @app=#<Rack::ConditionalGet:0x007fa73f9794b8 @app=#<Rack::ETag:0x007fa73f9794e0 @app=#<ActionDispatch::Routing::RouteSet:0x007fa7417b72e0>, @cache_control="max-age=0, private, must-revalidate", @no_cache_control="no-cache">>>, @parsers={#<Mime::Type:0x007fa73f3a9088 @synonyms=["text/x-json", "application/jsonrequest"], @symbol=:json, @string="application/json">=>:json}>>, @default_options={:path=>"/", :domain=>nil, :expire_after=>nil, :secure=>false, :httponly=>true, :defer=>false, :renew=>false}, @key="_apis-and-faraday-reading_session", @cookie_only=true>, @env={"GATEWAY_INTERFACE"=>"CGI/1.1", "PATH_INFO"=>"/", "QUERY_STRING"=>"", "REMOTE_ADDR"=>"::1", "REMOTE_HOST"=>"::1", "REQUEST_METHOD"=>"GET", "REQUEST_URI"=>"http://localhost:3000/", "SCRIPT_NAME"=>"", "SERVER_NAME"=>"localhost", "SERVER_PORT"=>"3000", "SERVER_PROTOCOL"=>"HTTP/1.1", "SERVER_SOFTWARE"=>"WEBrick/1.3.1 (Ruby/2.3.3/2016-11-21)", "HTTP_HOST"=>"localhost:3000", "HTTP_CONNECTION"=>"keep-alive", "HTTP_CACHE_CONTROL"=>"max-age=0", "HTTP_UPGRADE_INSECURE_REQUESTS"=>"1", "HTTP_USER_AGENT"=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36", "HTTP_ACCEPT"=>"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8", "HTTP_ACCEPT_ENCODING"=>"gzip, deflate, br", "HTTP_ACCEPT_LANGUAGE"=>"en-US,en;q=0.9", "HTTP_COOKIE"=>"io=GMAXy-oSPTejr_wqAAAI; _javascript_manifest_lab_session=ZnVUcy9VUU4xKzQ4RS9FOW94eHF6Q2RLekFyNlRzRElubEwzdGt0b25lQ3lxK1VFeVd1VWQ4RytscTRpUVNWU0Nvbis5a0hkQ2Z1dFd5RWFUSUcvOWlzZWRWVVVuUEc3ZGtWY3pqcUtpU1Q4bUs1aDBNMSsyZ3lRQXB5MUl5ZUM0ZW1SZndGcy92UnF2WEN5T050MGhBPT0tLUQzRDNuY1l2ZkJCRzJzeU9FSW9OSUE9PQ%3D%3D--ed4e5e4a2c385d47807e473f6b01a988648e6b8a; _css_manifest_rails_session=cmxHRGFYeHd4eUR6bURndjk5b2k1b0grU3E0am9aY0NNWkVHaER0dmc2Q1lXUWpwRVFrbzA4WWJkNlpuWWwxMmt2eDRINms1NHFJZGNqL25JaVFLdnNMT2NVdzZUSTZIaXFXZzBOWi90Nkk5Uzl5a3dCZzhKZkhxblNaZGxYV1pOVkcwRGplb1lzQnVUaGVxblVUTkx3PT0tLTQ4YUc0eEEwd2VVMTJrYU9nd0U2U1E9PQ%3D%3D--ea9a53b6693aa9f845bdd749a1c62e0c9dad422e; _rails-long-running-tasks-readme_session=WlNSNmVhbUVJWTQ3QVBGY2hBbXI3NVNhNDVFRGU1dSt4cnZFWFVNWjVqZERIQ1FQUHp3eWFtUTFxNjBxaGxNQ1BVdkJGc0VHSU1IK2U2ZGs4TTZYeFQwU1pIcW81Tis1aTlGV3RrVkl2QlVWVUdzZmJ6ZDBwaGx6cHI5dlNWTmxTZXprODBOMGt6d0h2c2RFSWViZUZBPT0tLXBKYnhuai9KTEovOFpoNXV3b0FXQnc9PQ%3D%3D--b96bda2d315e90117376138db3351288fdd43fee; _displaying-associations-rails-lab_session=bHF4MENxT2lGZlhrUS9Nc0F2SFEzdHFveWZkaXJuZkgyeXExODNGeTdmcUJ0Q2ZmN1RVMlo3Z0hWVGQvOGpIb0swR2VLOU9vT3htWVlpWitjMU52S3o3SXZkLzlwVGppMWxYcnRRdkgyQXNRQWxFRHkyK3IyTVc4andvellZYVVLMG9aK3BxS2VsK2NFYWZUR1BhR09RPT0tLUF3bXVXV3hHYXF4bDdPeWozRTBEd1E9PQ%3D%3D--1fe3e23aa943aac19ca490cd18e8fdcf27b3b88b; _basic_apis_lab_session=L2lVOHpINnd4alZKNkVnNWVKRGpGaEVHZldtcTlZVnRxL25UeU0rdEs4Sk1WWUpZd2pqSmVweWRWSHVJV3ZXOGNISkNMWU5wdmZlSHI1MVhULzk0M21BOFpWcWFpZHN1Q1c1NFBkcTBVdG5udEhhNE43VHBmYWRFY1hCUkxlSVlOLzEvd2IzS2lESGJ0NTdPZVJPek9nPT0tLWFOUUJYWDlBYmhwOVF6ankxc1ZPTUE9PQ%3D%3D--353072c59b1f939b36670d101fa85f16cb376dc7; _apis-and-faraday-reading_session=UkI5UUsxdU1XSldudDl6bzFVYTZGTVJzOTQyS2JCT3o3M0JGbVRQMGd3akgwWjBHdUkzTFBDRGsvUGNaZnAzeU9mcVR0czdmUVZyNFNBQklQK3ZyK1pwWjljWjc0ekhHRkN2SlU5RWs2ZzliS2hhMDNNWWVrV1pja1VvSnNqeGsxam9JaWUwcllIbEhTTU1MLzNKa0VRPT0tLUJXUi8xR3F5TkhMY2l0azhYbVlLenc9PQ%3D%3D--8f5afda8fb62dcd61a12693bc1d674d9a50f6adc", "rack.version"=>[1, 3], "rack.input"=>#<StringIO:0x007fa73f275630>, "rack.errors"=>#<IO:<STDERR>>, "rack.multithread"=>false, "rack.multiprocess"=>false, "rack.run_once"=>false, "rack.url_scheme"=>"http", "rack.hijack?"=>true, "rack.hijack"=>#<Proc:0x007fa73f275450@/Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/rack-1.6.4/lib/rack/handler/webrick.rb:76 (lambda)>, "rack.hijack_io"=>nil, "HTTP_VERSION"=>"HTTP/1.1", "REQUEST_PATH"=>"/", "ORIGINAL_FULLPATH"=>"/", "ORIGINAL_SCRIPT_NAME"=>"", "action_dispatch.routes"=>#<ActionDispatch::Routing::RouteSet:0x007fa7417b72e0>, "action_dispatch.parameter_filter"=>[:password], "action_dispatch.redirect_filter"=>[], "action_dispatch.secret_token"=>nil, "action_dispatch.secret_key_base"=>"149c37c3ed95b7415e4b5b0f47540cdb851b1e87945d2d369358c8e6fcb371a304c33e129bdfe418c9713b257f57b6940c888b517faf61071651a53e6cd761a3", "action_dispatch.show_exceptions"=>true, "action_dispatch.show_detailed_exceptions"=>true, "action_dispatch.logger"=>#<ActiveSupport::Logger:0x007fa7417d7b58 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fa7417d7ae0 @datetime_format=nil>, @formatter=#<ActiveSupport::Logger::SimpleFormatter:0x007fa7408acdb8 @datetime_format=nil>, @logdev=#<Logger::LogDevice:0x007fa7417d7a90 @shift_size=nil, @shift_age=nil, @filename=nil, @dev=#<File:/Users/johnwerenski/Development/web-auth-readme-v-000/log/development.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fa7417d7a68>>>, "action_dispatch.backtrace_cleaner"=>#<Rails::BacktraceCleaner:0x007fa741120350 @filters=[#<Proc:0x007fa74111af68@/Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/railties-4.2.5/lib/rails/backtrace_cleaner.rb:14>, #<Proc:0x007fa74111af40@/Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/railties-4.2.5/lib/rails/backtrace_cleaner.rb:15>, #<Proc:0x007fa74111aef0@/Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/railties-4.2.5/lib/rails/backtrace_cleaner.rb:16>, #<Proc:0x007fa741112ca0@/Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/railties-4.2.5/lib/rails/backtrace_cleaner.rb:29>], @silencers=[#<Proc:0x007fa741112c00@/Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/railties-4.2.5/lib/rails/backtrace_cleaner.rb:19>], @root="/Users/johnwerenski/Development/web-auth-readme-v-000/">, "action_dispatch.key_generator"=>#<ActiveSupport::CachingKeyGenerator:0x007fa73f378848 @key_generator=#<ActiveSupport::KeyGenerator:0x007fa73f3788e8 @secret="149c37c3ed95b7415e4b5b0f47540cdb851b1e87945d2d369358c8e6fcb371a304c33e129bdfe418c9713b257f57b6940c888b517faf61071651a53e6cd761a3", @iterations=1000>, @cache_keys=#<ThreadSafe::Cache:0x007fa73f378820 @backend={"signed_global_ids64"=>"p\xB3\"\x85G\x9F\xF1\xC8\xB4V7\xD7\xD7\xE1\xED\x98z,G\xE3\xDC\xED\xFB\x97\xC2\xF7\xF5+\x1F~{\x86~%\x05\x1F^\xCA\x8AL\x878\x19\\CS\xAE\xC1\xF3\xE2A\xB4\x97F\xF7F\xF0\x03k\xEC9p,)", "encrypted cookie64"=>"\xA0\x96m\xD0\x984-wv/\xE9\x1C\xADM\x86\x9A\xE5\xCF\x90\xCFc<vo\xFB\x9BQ\xC7\xB7\x1F\x9D\xBEQ\x8A\x8F\xE3XF|\xE0r,@C\xCD\xC7\xBA\xA9o\xC4JN\x14\x11\xEF\xE8\x97T\x15\xDC\xE0\x97~Z", "signed encrypted cookie64"=>"\x00\tWU\xD8\x8D\xC4\xF7AE\xA8\xEE\xF3e\x82%1B\xE4{\xC64\x10=\x1D\v\x1E\xD9\xD3\xA4S*\xA7\x05.\xB6\x1C9\xAA7\x86^\r\x8Ey8\xC8@\xA1\xB9\xB9e\xD3\xB7Tc\xC5\xDC\xA6M,\x9D\xF2\xE4"}, @default_proc=nil>>, "action_dispatch.http_auth_salt"=>"http authentication", "action_dispatch.signed_cookie_salt"=>"signed cookie", "action_dispatch.encrypted_cookie_salt"=>"encrypted cookie", "action_dispatch.encrypted_signed_cookie_salt"=>"signed encrypted cookie", "action_dispatch.cookies_serializer"=>:json, "action_dispatch.cookies_digest"=>nil, "ROUTES_70178167437680_SCRIPT_NAME"=>"", "action_dispatch.request_id"=>"84560f3d-9598-479c-8c61-d2a065410081", "action_dispatch.remote_ip"=>#<ActionDispatch::RemoteIp::GetIp:0x007fa73f970728 @env={...}, @check_ip=true, @proxies=[#<IPAddr: IPv4:127.0.0.1/255.255.255.255>, #<IPAddr: IPv6:0000:0000:0000:0000:0000:0000:0000:0001/ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff>, #<IPAddr: IPv6:fc00:0000:0000:0000:0000:0000:0000:0000/fe00:0000:0000:0000:0000:0000:0000:0000>, #<IPAddr: IPv4:10.0.0.0/255.0.0.0>, #<IPAddr: IPv4:172.16.0.0/255.240.0.0>, #<IPAddr: IPv4:192.168.0.0/255.255.0.0>]>, "rack.session"=>#<ActionDispatch::Request::Session:0x007fa73f999380 ...>, "rack.session.options"=>#<ActionDispatch::Request::Session::Options:0x007fa73f9992e0 @by=#<ActionDispatch::Session::CookieStore:0x007fa73f979378 @app=#<ActionDispatch::Flash:0x007fa73f9793a0 @app=#<ActionDispatch::ParamsParser:0x007fa73f979468 @app=#<Rack::Head:0x007fa73f979490 @app=#<Rack::ConditionalGet:0x007fa73f9794b8 @app=#<Rack::ETag:0x007fa73f9794e0 @app=#<ActionDispatch::Routing::RouteSet:0x007fa7417b72e0>, @cache_control="max-age=0, private, must-revalidate", @no_cache_control="no-cache">>>, @parsers={#<Mime::Type:0x007fa73f3a9088 @synonyms=["text/x-json", "application/jsonrequest"], @symbol=:json, @string="application/json">=>:json}>>, @default_options={:path=>"/", :domain=>nil, :expire_after=>nil, :secure=>false, :httponly=>true, :defer=>false, :renew=>false}, @key="_apis-and-faraday-reading_session", @cookie_only=true>, @env={...}, @delegate={:path=>"/", :domain=>nil, :expire_after=>nil, :secure=>false, :httponly=>true, :defer=>false, :renew=>false, :id=>"cb21110a1a4bc5692bd65e6a79fe906c"}>, "action_dispatch.request.path_parameters"=>{:controller=>"searches", :action=>"search"}, "action_controller.instance"=>#<SearchesController:0x007fa740948510 @_action_has_layout=true, @_routes=nil, @_headers={"Content-Type"=>"text/html"}, @_status=200, @_request=#<ActionDispatch::Request:0x007fa740948380 @env={...}, @filtered_parameters={"controller"=>"searches", "action"=>"search"}, @filtered_env=nil, @filtered_path=nil, @protocol=nil, @port=nil, @method=nil, @request_method="GET", @remote_ip=nil, @original_fullpath=nil, @fullpath="/", @ip=nil, @uuid=nil>, @_response=#<ActionDispatch::Response:0x007fa740948308 @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fa7409481f0>, @stream=#<ActionDispatch::Response::Buffer:0x007fa740948100 @response=#<ActionDispatch::Response:0x007fa740948308 ...>, @buf=[], @closed=false>, @header={"X-Frame-Options"=>"SAMEORIGIN", "X-XSS-Protection"=>"1; mode=block", "X-Content-Type-Options"=>"nosniff"}, @status=200, @sending_file=false, @blank=false, @cv=#<MonitorMixin::ConditionVariable:0x007fa74094a8b0 @monitor=#<ActionDispatch::Response:0x007fa740948308 ...>, @cond=#<Thread::ConditionVariable:0x007fa74094a9a0>>, @committed=false, @sending=false, @sent=false, @content_type=nil, @charset=nil, @cache_control={}, @etag=nil, @request=#<ActionDispatch::Request:0x007fa740948380 @env={...}, @filtered_parameters={"controller"=>"searches", "action"=>"search"}, @filtered_env=nil, @filtered_path=nil, @protocol=nil, @port=nil, @method=nil, @request_method="GET", @remote_ip=nil, @original_fullpath=nil, @fullpath="/", @ip=nil, @uuid=nil>>, @_env={...}, @_lookup_context=#<ActionView::LookupContext:0x007fa7434f32f0 @details_key=nil, @details={:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :web_console_v2], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}, @skip_default_locale=false, @cache=true, @prefixes=["searches", "application"], @rendered_format=nil, @view_paths=#<ActionView::PathSet:0x007fa7434f3250 @paths=[#<ActionView::OptimizedFileSystemResolver:0x007fa7431696e8 @pattern=":prefix/:action{.:locale,}{.:formats,}{+:variants,}{.:handlers,}", @cache=#<ActionView::Resolver::Cache:0x007fa7431696c0 @data=#<ActionView::Resolver::Cache::SmallCache:0x007fa743169698 @backend={}, @default_proc=#<Proc:0x007fa741585af8@/Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionview-4.2.5/lib/action_view/template/resolver.rb:49 (lambda)>>>, @path="/Users/johnwerenski/Development/web-auth-readme-v-000/app/views">]>>, @_action_name="search", @_response_body=nil, @marked_for_same_origin_verification=true, @_config={}>, "action_dispatch.request.content_type"=>nil, "action_dispatch.request.request_parameters"=>{}, "rack.request.query_string"=>"", "rack.request.query_hash"=>{}, "action_dispatch.request.query_parameters"=>{}, "action_dispatch.request.parameters"=>{"controller"=>"searches", "action"=>"search"}, "action_dispatch.request.formats"=>[#<Mime::Type:0x007fa74128e200 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">], "rack.request.cookie_hash"=>{"io"=>"GMAXy-oSPTejr_wqAAAI", "_javascript_manifest_lab_session"=>"ZnVUcy9VUU4xKzQ4RS9FOW94eHF6Q2RLekFyNlRzRElubEwzdGt0b25lQ3lxK1VFeVd1VWQ4RytscTRpUVNWU0Nvbis5a0hkQ2Z1dFd5RWFUSUcvOWlzZWRWVVVuUEc3ZGtWY3pqcUtpU1Q4bUs1aDBNMSsyZ3lRQXB5MUl5ZUM0ZW1SZndGcy92UnF2WEN5T050MGhBPT0tLUQzRDNuY1l2ZkJCRzJzeU9FSW9OSUE9PQ==--ed4e5e4a2c385d47807e473f6b01a988648e6b8a", "_css_manifest_rails_session"=>"cmxHRGFYeHd4eUR6bURndjk5b2k1b0grU3E0am9aY0NNWkVHaER0dmc2Q1lXUWpwRVFrbzA4WWJkNlpuWWwxMmt2eDRINms1NHFJZGNqL25JaVFLdnNMT2NVdzZUSTZIaXFXZzBOWi90Nkk5Uzl5a3dCZzhKZkhxblNaZGxYV1pOVkcwRGplb1lzQnVUaGVxblVUTkx3PT0tLTQ4YUc0eEEwd2VVMTJrYU9nd0U2U1E9PQ==--ea9a53b6693aa9f845bdd749a1c62e0c9dad422e", "_rails-long-running-tasks-readme_session"=>"WlNSNmVhbUVJWTQ3QVBGY2hBbXI3NVNhNDVFRGU1dSt4cnZFWFVNWjVqZERIQ1FQUHp3eWFtUTFxNjBxaGxNQ1BVdkJGc0VHSU1IK2U2ZGs4TTZYeFQwU1pIcW81Tis1aTlGV3RrVkl2QlVWVUdzZmJ6ZDBwaGx6cHI5dlNWTmxTZXprODBOMGt6d0h2c2RFSWViZUZBPT0tLXBKYnhuai9KTEovOFpoNXV3b0FXQnc9PQ==--b96bda2d315e90117376138db3351288fdd43fee", "_displaying-associations-rails-lab_session"=>"bHF4MENxT2lGZlhrUS9Nc0F2SFEzdHFveWZkaXJuZkgyeXExODNGeTdmcUJ0Q2ZmN1RVMlo3Z0hWVGQvOGpIb0swR2VLOU9vT3htWVlpWitjMU52S3o3SXZkLzlwVGppMWxYcnRRdkgyQXNRQWxFRHkyK3IyTVc4andvellZYVVLMG9aK3BxS2VsK2NFYWZUR1BhR09RPT0tLUF3bXVXV3hHYXF4bDdPeWozRTBEd1E9PQ==--1fe3e23aa943aac19ca490cd18e8fdcf27b3b88b", "_basic_apis_lab_session"=>"L2lVOHpINnd4alZKNkVnNWVKRGpGaEVHZldtcTlZVnRxL25UeU0rdEs4Sk1WWUpZd2pqSmVweWRWSHVJV3ZXOGNISkNMWU5wdmZlSHI1MVhULzk0M21BOFpWcWFpZHN1Q1c1NFBkcTBVdG5udEhhNE43VHBmYWRFY1hCUkxlSVlOLzEvd2IzS2lESGJ0NTdPZVJPek9nPT0tLWFOUUJYWDlBYmhwOVF6ankxc1ZPTUE9PQ==--353072c59b1f939b36670d101fa85f16cb376dc7", "_apis-and-faraday-reading_session"=>"UkI5UUsxdU1XSldudDl6bzFVYTZGTVJzOTQyS2JCT3o3M0JGbVRQMGd3akgwWjBHdUkzTFBDRGsvUGNaZnAzeU9mcVR0czdmUVZyNFNBQklQK3ZyK1pwWjljWjc0ekhHRkN2SlU5RWs2ZzliS2hhMDNNWWVrV1pja1VvSnNqeGsxam9JaWUwcllIbEhTTU1MLzNKa0VRPT0tLUJXUi8xR3F5TkhMY2l0azhYbVlLenc9PQ==--8f5afda8fb62dcd61a12693bc1d674d9a50f6adc"}, "rack.request.cookie_string"=>"io=GMAXy-oSPTejr_wqAAAI; _javascript_manifest_lab_session=ZnVUcy9VUU4xKzQ4RS9FOW94eHF6Q2RLekFyNlRzRElubEwzdGt0b25lQ3lxK1VFeVd1VWQ4RytscTRpUVNWU0Nvbis5a0hkQ2Z1dFd5RWFUSUcvOWlzZWRWVVVuUEc3ZGtWY3pqcUtpU1Q4bUs1aDBNMSsyZ3lRQXB5MUl5ZUM0ZW1SZndGcy92UnF2WEN5T050MGhBPT0tLUQzRDNuY1l2ZkJCRzJzeU9FSW9OSUE9PQ%3D%3D--ed4e5e4a2c385d47807e473f6b01a988648e6b8a; _css_manifest_rails_session=cmxHRGFYeHd4eUR6bURndjk5b2k1b0grU3E0am9aY0NNWkVHaER0dmc2Q1lXUWpwRVFrbzA4WWJkNlpuWWwxMmt2eDRINms1NHFJZGNqL25JaVFLdnNMT2NVdzZUSTZIaXFXZzBOWi90Nkk5Uzl5a3dCZzhKZkhxblNaZGxYV1pOVkcwRGplb1lzQnVUaGVxblVUTkx3PT0tLTQ4YUc0eEEwd2VVMTJrYU9nd0U2U1E9PQ%3D%3D--ea9a53b6693aa9f845bdd749a1c62e0c9dad422e; _rails-long-running-tasks-readme_session=WlNSNmVhbUVJWTQ3QVBGY2hBbXI3NVNhNDVFRGU1dSt4cnZFWFVNWjVqZERIQ1FQUHp3eWFtUTFxNjBxaGxNQ1BVdkJGc0VHSU1IK2U2ZGs4TTZYeFQwU1pIcW81Tis1aTlGV3RrVkl2QlVWVUdzZmJ6ZDBwaGx6cHI5dlNWTmxTZXprODBOMGt6d0h2c2RFSWViZUZBPT0tLXBKYnhuai9KTEovOFpoNXV3b0FXQnc9PQ%3D%3D--b96bda2d315e90117376138db3351288fdd43fee; _displaying-associations-rails-lab_session=bHF4MENxT2lGZlhrUS9Nc0F2SFEzdHFveWZkaXJuZkgyeXExODNGeTdmcUJ0Q2ZmN1RVMlo3Z0hWVGQvOGpIb0swR2VLOU9vT3htWVlpWitjMU52S3o3SXZkLzlwVGppMWxYcnRRdkgyQXNRQWxFRHkyK3IyTVc4andvellZYVVLMG9aK3BxS2VsK2NFYWZUR1BhR09RPT0tLUF3bXVXV3hHYXF4bDdPeWozRTBEd1E9PQ%3D%3D--1fe3e23aa943aac19ca490cd18e8fdcf27b3b88b; _basic_apis_lab_session=L2lVOHpINnd4alZKNkVnNWVKRGpGaEVHZldtcTlZVnRxL25UeU0rdEs4Sk1WWUpZd2pqSmVweWRWSHVJV3ZXOGNISkNMWU5wdmZlSHI1MVhULzk0M21BOFpWcWFpZHN1Q1c1NFBkcTBVdG5udEhhNE43VHBmYWRFY1hCUkxlSVlOLzEvd2IzS2lESGJ0NTdPZVJPek9nPT0tLWFOUUJYWDlBYmhwOVF6ankxc1ZPTUE9PQ%3D%3D--353072c59b1f939b36670d101fa85f16cb376dc7; _apis-and-faraday-reading_session=UkI5UUsxdU1XSldudDl6bzFVYTZGTVJzOTQyS2JCT3o3M0JGbVRQMGd3akgwWjBHdUkzTFBDRGsvUGNaZnAzeU9mcVR0czdmUVZyNFNBQklQK3ZyK1pwWjljWjc0ekhHRkN2SlU5RWs2ZzliS2hhMDNNWWVrV1pja1VvSnNqeGsxam9JaWUwcllIbEhTTU1MLzNKa0VRPT0tLUJXUi8xR3F5TkhMY2l0azhYbVlLenc9PQ%3D%3D--8f5afda8fb62dcd61a12693bc1d674d9a50f6adc", "action_dispatch.cookies"=>#<ActionDispatch::Cookies::CookieJar:0x007fa7409488a8 @key_generator=#<ActiveSupport::CachingKeyGenerator:0x007fa73f378848 @key_generator=#<ActiveSupport::KeyGenerator:0x007fa73f3788e8 @secret="149c37c3ed95b7415e4b5b0f47540cdb851b1e87945d2d369358c8e6fcb371a304c33e129bdfe418c9713b257f57b6940c888b517faf61071651a53e6cd761a3", @iterations=1000>, @cache_keys=#<ThreadSafe::Cache:0x007fa73f378820 @backend={"signed_global_ids64"=>"p\xB3\"\x85G\x9F\xF1\xC8\xB4V7\xD7\xD7\xE1\xED\x98z,G\xE3\xDC\xED\xFB\x97\xC2\xF7\xF5+\x1F~{\x86~%\x05\x1F^\xCA\x8AL\x878\x19\\CS\xAE\xC1\xF3\xE2A\xB4\x97F\xF7F\xF0\x03k\xEC9p,)", "encrypted cookie64"=>"\xA0\x96m\xD0\x984-wv/\xE9\x1C\xADM\x86\x9A\xE5\xCF\x90\xCFc<vo\xFB\x9BQ\xC7\xB7\x1F\x9D\xBEQ\x8A\x8F\xE3XF|\xE0r,@C\xCD\xC7\xBA\xA9o\xC4JN\x14\x11\xEF\xE8\x97T\x15\xDC\xE0\x97~Z", "signed encrypted cookie64"=>"\x00\tWU\xD8\x8D\xC4\xF7AE\xA8\xEE\xF3e\x82%1B\xE4{\xC64\x10=\x1D\v\x1E\xD9\xD3\xA4S*\xA7\x05.\xB6\x1C9\xAA7\x86^\r\x8Ey8\xC8@\xA1\xB9\xB9e\xD3\xB7Tc\xC5\xDC\xA6M,\x9D\xF2\xE4"}, @default_proc=nil>>, @set_cookies={}, @delete_cookies={}, @host="localhost", @secure=false, @options={:signed_cookie_salt=>"signed cookie", :encrypted_cookie_salt=>"encrypted cookie", :encrypted_signed_cookie_salt=>"signed encrypted cookie", :secret_token=>nil, :secret_key_base=>"149c37c3ed95b7415e4b5b0f47540cdb851b1e87945d2d369358c8e6fcb371a304c33e129bdfe418c9713b257f57b6940c888b517faf61071651a53e6cd761a3", :upgrade_legacy_signed_cookies=>false, :serializer=>:json, :digest=>nil}, @cookies={"io"=>"GMAXy-oSPTejr_wqAAAI", "_javascript_manifest_lab_session"=>"ZnVUcy9VUU4xKzQ4RS9FOW94eHF6Q2RLekFyNlRzRElubEwzdGt0b25lQ3lxK1VFeVd1VWQ4RytscTRpUVNWU0Nvbis5a0hkQ2Z1dFd5RWFUSUcvOWlzZWRWVVVuUEc3ZGtWY3pqcUtpU1Q4bUs1aDBNMSsyZ3lRQXB5MUl5ZUM0ZW1SZndGcy92UnF2WEN5T050MGhBPT0tLUQzRDNuY1l2ZkJCRzJzeU9FSW9OSUE9PQ==--ed4e5e4a2c385d47807e473f6b01a988648e6b8a", "_css_manifest_rails_session"=>"cmxHRGFYeHd4eUR6bURndjk5b2k1b0grU3E0am9aY0NNWkVHaER0dmc2Q1lXUWpwRVFrbzA4WWJkNlpuWWwxMmt2eDRINms1NHFJZGNqL25JaVFLdnNMT2NVdzZUSTZIaXFXZzBOWi90Nkk5Uzl5a3dCZzhKZkhxblNaZGxYV1pOVkcwRGplb1lzQnVUaGVxblVUTkx3PT0tLTQ4YUc0eEEwd2VVMTJrYU9nd0U2U1E9PQ==--ea9a53b6693aa9f845bdd749a1c62e0c9dad422e", "_rails-long-running-tasks-readme_session"=>"WlNSNmVhbUVJWTQ3QVBGY2hBbXI3NVNhNDVFRGU1dSt4cnZFWFVNWjVqZERIQ1FQUHp3eWFtUTFxNjBxaGxNQ1BVdkJGc0VHSU1IK2U2ZGs4TTZYeFQwU1pIcW81Tis1aTlGV3RrVkl2QlVWVUdzZmJ6ZDBwaGx6cHI5dlNWTmxTZXprODBOMGt6d0h2c2RFSWViZUZBPT0tLXBKYnhuai9KTEovOFpoNXV3b0FXQnc9PQ==--b96bda2d315e90117376138db3351288fdd43fee", "_displaying-associations-rails-lab_session"=>"bHF4MENxT2lGZlhrUS9Nc0F2SFEzdHFveWZkaXJuZkgyeXExODNGeTdmcUJ0Q2ZmN1RVMlo3Z0hWVGQvOGpIb0swR2VLOU9vT3htWVlpWitjMU52S3o3SXZkLzlwVGppMWxYcnRRdkgyQXNRQWxFRHkyK3IyTVc4andvellZYVVLMG9aK3BxS2VsK2NFYWZUR1BhR09RPT0tLUF3bXVXV3hHYXF4bDdPeWozRTBEd1E9PQ==--1fe3e23aa943aac19ca490cd18e8fdcf27b3b88b", "_basic_apis_lab_session"=>"L2lVOHpINnd4alZKNkVnNWVKRGpGaEVHZldtcTlZVnRxL25UeU0rdEs4Sk1WWUpZd2pqSmVweWRWSHVJV3ZXOGNISkNMWU5wdmZlSHI1MVhULzk0M21BOFpWcWFpZHN1Q1c1NFBkcTBVdG5udEhhNE43VHBmYWRFY1hCUkxlSVlOLzEvd2IzS2lESGJ0NTdPZVJPek9nPT0tLWFOUUJYWDlBYmhwOVF6ankxc1ZPTUE9PQ==--353072c59b1f939b36670d101fa85f16cb376dc7", "_apis-and-faraday-reading_session"=>"UkI5UUsxdU1XSldudDl6bzFVYTZGTVJzOTQyS2JCT3o3M0JGbVRQMGd3akgwWjBHdUkzTFBDRGsvUGNaZnAzeU9mcVR0czdmUVZyNFNBQklQK3ZyK1pwWjljWjc0ekhHRkN2SlU5RWs2ZzliS2hhMDNNWWVrV1pja1VvSnNqeGsxam9JaWUwcllIbEhTTU1MLzNKa0VRPT0tLUJXUi8xR3F5TkhMY2l0azhYbVlLenc9PQ==--8f5afda8fb62dcd61a12693bc1d674d9a50f6adc"}, @committed=false, @encrypted=#<ActionDispatch::Cookies::EncryptedCookieJar:0x007fa7434fb108 @parent_jar=#<ActionDispatch::Cookies::CookieJar:0x007fa7409488a8 ...>, @options={:signed_cookie_salt=>"signed cookie", :encrypted_cookie_salt=>"encrypted cookie", :encrypted_signed_cookie_salt=>"signed encrypted cookie", :secret_token=>nil, :secret_key_base=>"149c37c3ed95b7415e4b5b0f47540cdb851b1e87945d2d369358c8e6fcb371a304c33e129bdfe418c9713b257f57b6940c888b517faf61071651a53e6cd761a3", :upgrade_legacy_signed_cookies=>false, :serializer=>:json, :digest=>nil}, @encryptor=#<ActiveSupport::MessageEncryptor:0x007fa7434d1ec0 @secret="\xA0\x96m\xD0\x984-wv/\xE9\x1C\xADM\x86\x9A\xE5\xCF\x90\xCFc<vo\xFB\x9BQ\xC7\xB7\x1F\x9D\xBEQ\x8A\x8F\xE3XF|\xE0r,@C\xCD\xC7\xBA\xA9o\xC4JN\x14\x11\xEF\xE8\x97T\x15\xDC\xE0\x97~Z", @sign_secret="\x00\tWU\xD8\x8D\xC4\xF7AE\xA8\xEE\xF3e\x82%1B\xE4{\xC64\x10=\x1D\v\x1E\xD9\xD3\xA4S*\xA7\x05.\xB6\x1C9\xAA7\x86^\r\x8Ey8\xC8@\xA1\xB9\xB9e\xD3\xB7Tc\xC5\xDC\xA6M,\x9D\xF2\xE4", @cipher="aes-256-cbc", @verifier=#<ActiveSupport::MessageVerifier:0x007fa7434d1da8 @secret="\x00\tWU\xD8\x8D\xC4\xF7AE\xA8\xEE\xF3e\x82%1B\xE4{\xC64\x10=\x1D\v\x1E\xD9\xD3\xA4S*\xA7\x05.\xB6\x1C9\xAA7\x86^\r\x8Ey8\xC8@\xA1\xB9\xB9e\xD3\xB7Tc\xC5\xDC\xA6M,\x9D\xF2\xE4", @digest="SHA1", @serializer=ActiveSupport::MessageEncryptor::NullSerializer>, @serializer=ActiveSupport::MessageEncryptor::NullSerializer>>, @signed_or_encrypted=#<ActionDispatch::Cookies::EncryptedCookieJar:0x007fa7434fb108 @parent_jar=#<ActionDispatch::Cookies::CookieJar:0x007fa7409488a8 ...>, @options={:signed_cookie_salt=>"signed cookie", :encrypted_cookie_salt=>"encrypted cookie", :encrypted_signed_cookie_salt=>"signed encrypted cookie", :secret_token=>nil, :secret_key_base=>"149c37c3ed95b7415e4b5b0f47540cdb851b1e87945d2d369358c8e6fcb371a304c33e129bdfe418c9713b257f57b6940c888b517faf61071651a53e6cd761a3", :upgrade_legacy_signed_cookies=>false, :serializer=>:json, :digest=>nil}, @encryptor=#<ActiveSupport::MessageEncryptor:0x007fa7434d1ec0 @secret="\xA0\x96m\xD0\x984-wv/\xE9\x1C\xADM\x86\x9A\xE5\xCF\x90\xCFc<vo\xFB\x9BQ\xC7\xB7\x1F\x9D\xBEQ\x8A\x8F\xE3XF|\xE0r,@C\xCD\xC7\xBA\xA9o\xC4JN\x14\x11\xEF\xE8\x97T\x15\xDC\xE0\x97~Z", @sign_secret="\x00\tWU\xD8\x8D\xC4\xF7AE\xA8\xEE\xF3e\x82%1B\xE4{\xC64\x10=\x1D\v\x1E\xD9\xD3\xA4S*\xA7\x05.\xB6\x1C9\xAA7\x86^\r\x8Ey8\xC8@\xA1\xB9\xB9e\xD3\xB7Tc\xC5\xDC\xA6M,\x9D\xF2\xE4", @cipher="aes-256-cbc", @verifier=#<ActiveSupport::MessageVerifier:0x007fa7434d1da8 @secret="\x00\tWU\xD8\x8D\xC4\xF7AE\xA8\xEE\xF3e\x82%1B\xE4{\xC64\x10=\x1D\v\x1E\xD9\xD3\xA4S*\xA7\x05.\xB6\x1C9\xAA7\x86^\r\x8Ey8\xC8@\xA1\xB9\xB9e\xD3\xB7Tc\xC5\xDC\xA6M,\x9D\xF2\xE4", @digest="SHA1", @serializer=ActiveSupport::MessageEncryptor::NullSerializer>, @serializer=ActiveSupport::MessageEncryptor::NullSerializer>>>, "action_dispatch.request.unsigned_session_cookie"=>{"session_id"=>"cb21110a1a4bc5692bd65e6a79fe906c", "_csrf_token"=>"cujr5rgw0OgPjemW+wduZvEc8fK86lfy6QeCZmX7+cY="}}, @delegate={"session_id"=>"cb21110a1a4bc5692bd65e6a79fe906c", "_csrf_token"=>"cujr5rgw0OgPjemW+wduZvEc8fK86lfy6QeCZmX7+cY="}, @loaded=true, @exists=true>):
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/controllers/application_controller.rb:17:in `authenticate_user'
+
+
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (100.1ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (100.6ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (212.4ms)
+
+
+Started PUT "/__web_console/repl_sessions/59aef394d1bd03f304a99757040d84ed" for ::1 at 2019-03-18 12:23:56 -0500
+
+
+Started GET "/" for ::1 at 2019-03-18 12:24:34 -0500
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=DBA4FGMPBB3U01LUE3WNKRYT0ECAR053ELDQKYT1DL30D5RA&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=EIM0O0BO2ZOF4Y1DD0SEE2OTNJMJP5GD21XY5XK1D5GWRT4F" for ::1 at 2019-03-18 12:24:40 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"EIM0O0BO2ZOF4Y1DD0SEE2OTNJMJP5GD21XY5XK1D5GWRT4F"}
+Completed 500 Internal Server Error in 384ms (ActiveRecord: 0.0ms)
+
+RuntimeError ({"error"=>"redirect_uri_mismatch"}):
+  app/controllers/sessions_controller.rb:14:in `create'
+
+
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.8ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (85.1ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (82.6ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (172.6ms)
+
+
+Started PUT "/__web_console/repl_sessions/ba1d2dcb8e6f45473d804a0b54c52390" for ::1 at 2019-03-18 12:24:48 -0500
+
+
+Started PUT "/__web_console/repl_sessions/ba1d2dcb8e6f45473d804a0b54c52390" for ::1 at 2019-03-18 12:24:55 -0500
+
+
+Started PUT "/__web_console/repl_sessions/ba1d2dcb8e6f45473d804a0b54c52390" for ::1 at 2019-03-18 12:25:00 -0500
+
+
+Started PUT "/__web_console/repl_sessions/ba1d2dcb8e6f45473d804a0b54c52390" for ::1 at 2019-03-18 12:25:19 -0500
+
+
+Started GET "/" for ::1 at 2019-03-18 12:26:38 -0500
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=DBA4FGMPBB3U01LUE3WNKRYT0ECAR053ELDQKYT1DL30D5RA&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=BTOS032PYVULIJUINJSS4C3ZMHSIGRUM2FZMUMJYA0RZOTYU" for ::1 at 2019-03-18 12:26:42 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"BTOS032PYVULIJUINJSS4C3ZMHSIGRUM2FZMUMJYA0RZOTYU"}
+Completed 500 Internal Server Error in 427ms (ActiveRecord: 0.0ms)
+
+RuntimeError ({"access_token"=>"N5VBNK3OZ05SUVBSTRHL02YNUDQNW3L4CJ2B1WUPHBC5YCKT"}):
+  app/controllers/sessions_controller.rb:14:in `create'
+
+
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (88.8ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (77.0ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (170.5ms)
+
+
+Started PUT "/__web_console/repl_sessions/c9098d969840eef6d27d725f6c6b95d8" for ::1 at 2019-03-18 12:26:50 -0500
+
+
+Started GET "/" for ::1 at 2019-03-18 12:27:13 -0500
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=DBA4FGMPBB3U01LUE3WNKRYT0ECAR053ELDQKYT1DL30D5RA&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=AFT2V5RFPYO1AAJHODO4PQSP5CNWWVKGI4TWY0GXX1QV50HK" for ::1 at 2019-03-18 12:27:13 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AFT2V5RFPYO1AAJHODO4PQSP5CNWWVKGI4TWY0GXX1QV50HK"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 261ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-18 12:27:13 -0500
+Processing by SearchesController#search as HTML
+  Rendered searches/search.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 752ms (Views: 751.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2019-03-18 12:27:14 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2019-03-18 12:27:14 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2019-03-18 12:27:14 -0500
+
+
+Started GET "/friends" for ::1 at 2019-03-18 12:27:21 -0500
+Processing by SearchesController#friends as HTML
+Completed 500 Internal Server Error in 314ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/searches_controller.rb:37:in `friends'
+
+
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.0ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (78.8ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (172.7ms)
+
+
+Started GET "/" for ::1 at 2019-03-18 12:29:33 -0500
+Processing by SearchesController#search as HTML
+  Rendered searches/search.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for ::1 at 2019-03-18 12:29:38 -0500
+Processing by SearchesController#friends as HTML
+Completed 500 Internal Server Error in 444ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/searches_controller.rb:37:in `friends'
+
+
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.1ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (75.5ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (171.6ms)
+
+
+Started GET "/friends" for ::1 at 2019-03-18 12:29:48 -0500
+Processing by SearchesController#friends as HTML
+Completed 500 Internal Server Error in 272ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/searches_controller.rb:37:in `friends'
+
+
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (91.9ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (78.8ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/johnwerenski/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (176.6ms)
+
+
+Started PUT "/__web_console/repl_sessions/31697ccc8d554e825256a8281800d2d9" for ::1 at 2019-03-18 12:29:56 -0500
+
+
+Started PUT "/__web_console/repl_sessions/31697ccc8d554e825256a8281800d2d9" for ::1 at 2019-03-18 12:30:02 -0500
+
+
+Started PUT "/__web_console/repl_sessions/31697ccc8d554e825256a8281800d2d9" for ::1 at 2019-03-18 12:30:12 -0500
+
+
+Started GET "/friends" for ::1 at 2019-03-18 12:30:54 -0500
+Processing by SearchesController#friends as HTML
+  Rendered searches/friends.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 327ms (Views: 51.9ms | ActiveRecord: 0.0ms)
